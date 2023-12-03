@@ -59,6 +59,54 @@ padding: 25px;
 .content {
 width: 500px;
 margin: 0 auto; /* Center the content */
+
+
+/* My UX Skills section coded using CSS flex */
+.mySkills {
+    display: flex; 
+    flex-direction: row; 
+}
+
+/* Styling for the flex children */
+.mySkills .flexContainer > div {
+    width: 33%; /* Set width to 33% for three evenly spaced columns */
+    margin: 0 10px; /* Adjust margin as needed for spacing */
+    padding: 20px; /* Adjust padding as needed for layout */
+}
+
+/* Your other CSS styles go here */
+
+/* My Work section coded using CSS Grid */
+.myWork {
+    display: grid; /* Set the display property to grid for the workGrid container */
+    grid-template-areas:
+        "project1-image project1-info"
+        "project2-image project2-info"; /* Define named grid areas for each project */
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    gap: 20px; /* Adjust the gap between grid items as needed */
+}
+
+/* Styling for project 1 image */
+.myWork div:nth-child(1) {
+    grid-area: project1-image; /* Set the grid area for the project 1 image */
+}
+
+/* Styling for project 1 info */
+.myWork div:nth-child(2) {
+    grid-area: project1-info; /* Set the grid area for the project 1 info */
+}
+
+/* Styling for project 2 image */
+.myWork div:nth-child(3) {
+    grid-area: project2-image; /* Set the grid area for the project 2 image */
+}
+
+/* Styling for project 2 info */
+.myWork div:nth-child(4) {
+    grid-area: project2-info; /* Set the grid area for the project 2 info */
+}
+
+
 }
 /* Styling for the HTML footer element */
 footer {
