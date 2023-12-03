@@ -106,6 +106,44 @@ margin: 0 auto; /* Center the content */
     grid-area: project2-info; /* Set the grid area for the project 2 info */
 }
 
+/* Your other CSS styles go here */
+
+/* My Work Section Constructed using CSS Grid */
+.myWork {
+    display: grid;
+    grid-template-rows: auto auto; /* Define two rows with auto height */
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+
+    /* Define grid areas to match your design */
+    grid-template-areas:
+        "project1-image project1-info"
+        "project2-image project2-info";
+    gap: 20px; /* Adjust the gap between grid items as needed */
+}
+
+/* Styling for project 1 image */
+.myWork div:nth-child(1) {
+    grid-area: project1-image;
+}
+
+/* Styling for project 1 info */
+.myWork div:nth-child(2) {
+    grid-area: project1-info;
+}
+
+/* Styling for project 2 image */
+.myWork div:nth-child(3) {
+    grid-area: project2-image;
+}
+
+/* Styling for project 2 info */
+.myWork div:nth-child(4) {
+    grid-area: project2-info;
+}
+
+/* Your other CSS styles go here */
+
+
 
 }
 /* Styling for the HTML footer element */
